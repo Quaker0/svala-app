@@ -3,10 +3,11 @@
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { useArrowNavigation } from "./hooks/useArrowNavigation";
 import ExpertiseSection from "./sections/ExpertiseSection";
 import AboutSection from "./sections/AboutSection";
 import HeroSection from "./sections/HeroSection";
-import NavBar from "./sections/NavBar";
+import NavBar, { navItems } from "./sections/NavBar";
 import ContactSection from "./sections/ContactSection";
 
 export default function Home() {
@@ -20,6 +21,12 @@ export default function Home() {
   });
   const logoScale = useTransform(scrollYProgress, [0, 1], [1, 0.6]);
   const logoY = useTransform(scrollYProgress, [0, 1], [0, -100]);
+
+  useArrowNavigation(
+    mainRef.current,
+    navItems.map((item) => item.id)
+  );
+
   return (
     <main
       ref={mainRef}
@@ -31,7 +38,7 @@ export default function Home() {
         style={{ y: logoY, scale: logoScale }}
       >
         <Image
-          src="/svala.png"
+          src="/svala.webp"
           alt="Svala Consulting logo"
           width={150}
           height={150}

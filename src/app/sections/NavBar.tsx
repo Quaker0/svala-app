@@ -8,7 +8,7 @@ type NavItem = {
   label: string;
 };
 
-const navItems: NavItem[] = [
+export const navItems: NavItem[] = [
   { id: "hero", label: "Svala Consulting" },
   { id: "about", label: "About Us" },
   { id: "expertise", label: "Expertise" },
@@ -61,7 +61,7 @@ export default function NavBar() {
           <li key={item.id} className="flex">
             {activeId === item.id && (
               <Image
-                src="/svala.png"
+                src="/svala.webp"
                 height={20}
                 width={20}
                 alt="Svala Consulting logo nav bar indicator"

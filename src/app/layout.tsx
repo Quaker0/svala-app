@@ -19,7 +19,18 @@ const titleFont = League_Spartan({
 
 export const metadata: Metadata = {
   title: "Svala Consulting",
-  description: "",
+  description:
+    "Hire a Software Developer specialist as an inhouse resource or for a development project.",
+  keywords: [
+    "Software development consulting",
+    "Agile software development",
+    "Full-stack developer",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "AWS cloud",
+    "Python",
+  ],
 };
 
 export default function RootLayout({
