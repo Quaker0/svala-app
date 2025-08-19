@@ -13,6 +13,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Build
 
 ```bash
+make build
+```
+
+## Serve production build
+
+```bash
 make serve
 ```
 
