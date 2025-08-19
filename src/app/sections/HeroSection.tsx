@@ -9,7 +9,7 @@ export default function HeroSection() {
       <div className="gap-[32px]">
         <div className="flex flex-col items-center">
           <div className="flex flex-col items-center justify-center pt-40">
-            <h1 className="font-title font-bold text-center leading-[1.1em] z-60">
+            <h1 className="font-title font-bold text-center leading-[1.1em] z-60 text-5xl md:text-7xl">
               SVALA
               <br />
               CONSULTING

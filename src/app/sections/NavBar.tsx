@@ -62,10 +62,10 @@ export default function NavBar() {
             {activeId === item.id && (
               <Image
                 src="/svala.webp"
-                height={20}
                 width={20}
+                height={20}
                 alt="Svala Consulting logo nav bar indicator"
-                className="invert"
+                className="invert h-[20px] w-[20px]"
                 priority
               />
             )}
