@@ -9,6 +9,7 @@ import AboutSection from "./sections/AboutSection";
 import HeroSection from "./sections/HeroSection";
 import NavBar, { navItems } from "./sections/NavBar";
 import ContactSection from "./sections/ContactSection";
+import GlobeSection from "./sections/GlobeSection";
 
 export default function Home() {
   const mainRef = useRef<HTMLElement>(null);
@@ -50,6 +51,7 @@ export default function Home() {
 
       <HeroSection />
       <AboutSection />
+      <GlobeSection />
       <ExpertiseSection ref={expertiseRef} />
       <ContactSection
         linkedinUrl="https://www.linkedin.com/in/niclasbman"

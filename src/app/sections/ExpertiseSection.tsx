@@ -31,7 +31,7 @@ export default function ExpertiseSection({ ref }: ExpertiseSectionProps) {
     >
       <div className="h-full w-full flex flex-col items-center justify-center px-6 sm:px-16">
         <motion.h2
-          className="text-2xl sm:text-4xl font-bold text-[#0a2540]"
+          className="text-[#0a2540]"
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ amount: 0.3 }}
